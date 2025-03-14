@@ -1,4 +1,4 @@
-# DESK15 - Complex Numbers Calculator and Spreadsheet for the DM-15
+# DESK15 - Scientific Calculator and Spreadsheet for the DM-15
 
 -----
 
