@@ -6,7 +6,7 @@
 
 -----
 
-See a short video of Version 1 of DESK42 at: https://youtu.be/
+See a short video of Version 1 of DESK15 at: https://youtu.be/
 
 -----
 # Pictures
