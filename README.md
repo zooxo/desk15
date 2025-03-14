@@ -1,4 +1,4 @@
-# DESK15 - Alternative Firmware for the DM-15 Calculator
+# DESK15 - Complex Numbers Calculator and Spreadsheet for the DM-15
 
 -----
 
