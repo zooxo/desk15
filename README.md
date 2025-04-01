@@ -1,4 +1,4 @@
-# DESK15 - Scientific Calculator and Spreadsheet for the DM-15
+# DESK15 - Calculator Suite (including a Spreadsheet) for the DM-15
 
 -----
 
