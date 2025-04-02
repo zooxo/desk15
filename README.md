@@ -16,8 +16,9 @@ See a short video of Version 1 of DESK15 at: https://youtu.be/
 -----
 # Manual
 
-
 ```
+This software is protected by the BSD 3 Clause Licence
+and copyright (c) 2025 by deetee. All rights reserved.
 
 ____________________
 
