@@ -18,6 +18,7 @@ See a short video of Version 1 of DESK15 at: https://youtu.be/
 
 
 ```
+
 ____________________
 
 PREAMBLE
@@ -25,14 +26,14 @@ ____________________
 
 The HP-15c was probably the most versatile scientific calculator. Similar to
 DESK42 (for the DM42) DESK15 offers an alternative firmware for the
-DM15C/DM15L replica of Swissmicros with primarily a complex number calculator
-and a spreadsheet.
-The restrictions of the NPX-ARM-Cortex-M0 microcontroller with 64 kilobytes of
-flash memory and 8 kilobytes SRAM are vincible with efficient programming and
-accepting the 7 digits precision for floating numbers.
+DM15C/DM15L replica of Swissmicros with a suite of some applications like a
+complex number calculator, a spreadsheet, a symbolic and a tabletop calculator.
 
-Have fun
+See more at: github.com/zooxo/desk15
+
+and have fun!
 deetee
+
 
 ____________________
 
@@ -71,6 +72,7 @@ PLEX supports the following functions:
     EEX       Push Y*10^X to the stack
     BSP gBSP  Clear number entry or TOS, clear stack and statistics data
     LASTx     Push last ENTERed number to stack
+    SWAP      Swap X and Y
     ROT up/dn Rotate 3 stack elements
     STO RCL   Store TOS or push stored number to stack (store 0 to delete)
   Complex number operations
@@ -96,18 +98,77 @@ PLEX supports the following functions:
     fg4 5 6   kg<>lbs, °C<>°F, l<>gal
     fg1 2 3   rect/polar view, h<>h.ms, deg<>rad
   Menu
-    GSB       QUIT, pol/rect view, number size, HEX
+    GSB       QUIT, View (pol/rect), Size of font, HEX mode
     fGSB      BATTERY, set LCD brightness/voltage, ONtime, set OFFTIME
     gGSB      Get/set DATE, get/set TIME
 
     Please note:
+    When in HEX mode enter numbers >9 with a dot (ie. .1=a, .6=f).
     To set the OFFTIME enter the desired value (5-300) in seconds to the stack
     and press Toff (fGSB6).
     Be careful when setting the lcd brightness (fGSB4, 0-64) or lcd voltage
     (fGSB5, 0-5-7). The default values are 0 and 5.
     Get/set date and time from/to the real time clock (RTC) with the gGSB menu.
     The format for the date on the stack is YY.MMDDw (where w is the number of
-    the weekday (0=monday). The format for the time is HH.MM.
+    the weekday (0=Monday). The format for the time is HH.MM.
+
+
+____________________
+
+RAX
+____________________
+
+RAX is the spreadsheet application of DESK15. When starting RAX you are in the
+navigation mode, where the number keys work as cursor pad (see below). The
+navigation mode is also active when you refer in a formula to a specific cell.
+
+Keys in navigation mode:
+  2 4 6 8  Navigation (Down/Left/Up/Right)
+  ENTER    Edit selected cell
+  R/S      Define and edit a new text cell
+  BSP      Delete cell
+  STO RCL  Save/load spreadsheet from/to one of 6 slots
+           Please note that a text in the last cell (D8) is used as slot name.
+  GSB      Menu: Quit RAX, New sheet, Copy&Glue/Paste, Hex mode (see PLEX)
+
+Keys in edit mode (ENTER to select and quit):
+  SST GTO        Cursor left/right
+  SUM+           Insert a stack enter command to separate numbers
+  BSP            Backspace - delete character
+  RCL            Reference (Select reference cell and enter)
+  ENTER GSB R/S  Quit edit mode to navigation mode
+
+____________________
+
+FLEX
+____________________
+
+The symbolic calculator FLEX has the look and feel of PLEX, but actually
+calculates  in the first cell of a RAX spreadsheet. Hence you can see and edit
+(with R/S) the formula that yields to the result.
+
+Quit FLEX (and go back to the DESK menu) with GSB.
+
+____________________
+
+TTOP
+____________________
+
+TTOP is a tabletop calculator that enables (simple) calculating with big numbers
+(even in HEX format) with up to 17 digits. If desired two digits are used for
+decimals (ie for cent amounts).
+
+TTOP supports the following functions:
+  + - * / Basic operation
+  CHS     Negate TOS (ends number input)
+  EEX     Push Y*10^X to the stack (Y*16^X in HEX mode)
+  ENTER   Enter number (stack lift) or duplicate TOS
+  SWAP    Swap X and Y
+  ROT     Rotate 3 stack elements
+  BSP     Clear last number
+  SQRT    Calculate square root
+  STO RCL Store TOS or push stored number to stack (store 0 to delete)
+  GSB     Menu: Quit TTOP, 0/2 decimals, HEX mode
 
 
 
