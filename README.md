@@ -3,6 +3,7 @@
 -----
 
 ## *** Coming Soon ***
+## *** If you can't wait - try beta.hex ***
 
 -----
 
