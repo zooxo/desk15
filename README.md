@@ -21,14 +21,15 @@ See a short video of Version 1 of DESK15 at: https://youtu.be/
 This software is protected by the BSD 3 Clause Licence
 and copyright (c) 2025 by deetee. All rights reserved.
 
+
 ____________________
 
 PREAMBLE
 ____________________
 
-The HP-15c was probably the most versatile scientific calculator. Similar to
-DESK42 (for the DM42) DESK15 offers an alternative firmware for the
-DM15C/DM15L replica of Swissmicros with a suite of some applications like a
+The HP-15c was probably the most simple butversatile scientific calculator.
+Similar to DESK42 (for the DM42) DESK15 offers an alternative firmware for the
+DM15/DM15L replica of Swissmicros with a suite of some applications like a
 complex number calculator, a spreadsheet, a symbolic and a tabletop calculator.
 
 See more at: github.com/zooxo/desk15
@@ -84,7 +85,7 @@ PLEX supports the following functions:
     fCHS      Conjugate complex number
   Advanced mathematics
     SQRT, SQR, EXP, LN, 10^X, LOG, Y^X, %, 1/X, delta%,
-    FRAC, INT, ABS, PI, Pxy, Cxy, lnGAMMA
+    FRAC, INT, ABS, PI, Pxy, Cxy, lnGAMMA, QuadraticEquation
     SIN, COS, TAN, aSIN, aCOS, aTAN, SINH, COSH, TANH, aSINH, aCOSH, aTANH
   Statistics
     SUM+ SUM- Add/remove number to/from statistics registers
@@ -92,20 +93,21 @@ PLEX supports the following functions:
     fSUM      Parameters a and b of linear regression (y=a*x+b)
     gBSP      Clears statistics registers (and stack)
   Function analysis
-    gRS       Start key recorder to input f(x)
+    gR/S      Start key recorder to input f(x)
     R/S       Stop key recorder, calculate y=f(X)
     fg/ fg*   Solve, slope, integrate, plot
+    g-        Calculate 2 roots of quadratic equation axx+bx+c=0 (enter a b c)
   Conversions
     fg7 8 9   cm<>in, km<>mi, km<>nmi
     fg4 5 6   kg<>lbs, °C<>°F, l<>gal
     fg1 2 3   rect/polar view, h<>h.ms, deg<>rad
   Menu
     GSB       QUIT, View (pol/rect), Size of font, HEX mode
-    fGSB      BATTERY, set LCD brightness/voltage, ONtime, set OFFTIME
+    fGSB      BATTERY, set LCD brightness/voltage, set OFFTIME
     gGSB      Get/set DATE, get/set TIME
 
     Please note:
-    When in HEX mode enter numbers >9 with a dot (ie. .1=a, .6=f).
+    When in HEX mode enter numbers >9 with a dot (ie .1=a, .6=f).
     To set the OFFTIME enter the desired value (5-300) in seconds to the stack
     and press Toff (fGSB6).
     Be careful when setting the lcd brightness (fGSB4, 0-64) or lcd voltage
@@ -156,9 +158,10 @@ ____________________
 TTOP
 ____________________
 
-TTOP is a tabletop calculator that enables (simple) calculating with big numbers
-(even in HEX format) with up to 17 digits. If desired two digits are used for
-decimals (ie for cent amounts).
+//--v----1----v----2----v----3----v----4----v----5----v----6----v----7----v----8
+TTOP is a tabletop calculator that enables (simple) calculations with big
+numbers (even in HEX format) with up to 17 digits. If desired two digits are
+used for decimals (ie for cent amounts).
 
 TTOP supports the following functions:
   + - * / Basic operation
