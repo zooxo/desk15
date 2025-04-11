@@ -274,7 +274,7 @@ TTOP supports the following functions:
   STO RCL  Save/load TEX document to/from one of 6 slots
   GSB      Quit TEX
 
-  To enter a new line after the last line edit with split opion (/) and leave
+  To enter a new line after the last line edit with split option (/) and leave
   editor immediately (ENTER).
   To edit a text TEX uses the text editing routines of RAX (see above).
 
