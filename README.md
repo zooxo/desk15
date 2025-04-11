@@ -143,7 +143,7 @@ PLEX supports the following functions:
     The format for the date on the stack is YY.MMDDw (where w is the number of
     the weekday (0=Monday). The format for the time is HH.MM.
 
-  Physical constants keys (GSB9):
+  Physical constants keys (GSB4):
     ENTER     Select (push) constant
     2 8 3 9   Down, Up, PgDown, PgUp
     GSB       Quit (without selecting)
