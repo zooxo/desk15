@@ -20,7 +20,6 @@ See a short video of Version 1 of DESK15 at: https://youtu.be/
 # Manual
 
 ```
-
 This software is protected by the BSD 3 Clause Licence
 and copyright (c) 2025 by deetee. All rights reserved.
 
@@ -36,7 +35,7 @@ The HP-15c was probably the most simple but versatile scientific calculator.
 Similar to DESK42 (for the DM42) DESK15 offers an alternative firmware for the
 DM15/DM15L replica of Swissmicros with a suite of some applications like a
 complex number calculator, a spreadsheet, a symbolic, a tabletop calculator
-and even a simple text editor.
+and even a sliderule and a simple text editor.
 
 Have fun!
 deetee
@@ -72,7 +71,7 @@ can launch the desired application with the keys 7, 8, 9 and 4, 5, 6:
   8 FLEX ... Symbolic Calculator
   9 RAX  ... Spreadsheet
   4 TTOP ... Table Top Calculator
-  5
+  5 RULE ... Slide Rule Simulation
   6 TEX  ... Text Editor
 
 On the right side of the screen you see some extra information like the battery
@@ -256,6 +255,22 @@ TTOP supports the following functions:
 
 ____________________
 
+RULE
+____________________
+
+RULE is a simulation of a historic slide rule for reasons of education and
+reminiscence.
+
+RULE supports the following functions:
+  SQRT /   Slide one pixel left/right
+  EXP 9    Slide 5 pixel left/right
+  POW10 8  Slide 10 pixel left/right
+  POW 7    Slide 20 pixel left/right
+  GSB      Quit RULE
+
+
+____________________
+
 TEX
 ____________________
 
@@ -274,8 +289,8 @@ TTOP supports the following functions:
   STO RCL  Save/load TEX document to/from one of 6 slots
   GSB      Quit TEX
 
-  To enter a new line after the last line edit with split option (/) and leave
-  editor immediately (ENTER).
+  To enter a new line after the last line edit with split option (/) and
+  leave editor immediately (ENTER).
   To edit a text TEX uses the text editing routines of RAX (see above).
 
 
