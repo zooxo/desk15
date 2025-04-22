@@ -14,7 +14,7 @@ See a short video of Version 1 of DESK15 at: https://youtu.be/
 
 ![Image](https://github.com/user-attachments/assets/bd67d6db-1d2b-4793-a091-3f5fe8a7a563)
 
-![Image](https://github.com/user-attachments/assets/bc5c9a2d-d0ef-484d-9f09-6aca62368779)
+![Image](https://github.com/user-attachments/assets/ad16c6c2-d4dc-48e8-aaa8-dc4419edcc31)
 
 -----
 # Manual
