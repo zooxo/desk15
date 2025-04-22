@@ -56,7 +56,8 @@ desired firmware (hex file) to the calculator with:
 
 After starting this command press the reset button on the backside of the
 calculator with a paperclip. After the flashing procedure ends you might need to
-reset the calculator again.
+reset the calculator again. Every Swissmicros-Calculator has a reset button
+on the PCB (even if there is no hole to reach it).
 
 
 ____________________
@@ -110,8 +111,11 @@ PLEX supports the following functions:
     fCHS      Conjugate complex number
   Advanced mathematics
     SQRT, SQR, EXP, LN, 10^X, LOG, Y^X, %, 1/X, delta%,
-    FRAC, INT, ABS, PI, Pxy, Cxy, lnGAMMA, QuadraticEquation
+    FRAC, INT, ABS, PI, Pxy, Cxy, lnGAMMA (f0),
     SIN, COS, TAN, aSIN, aCOS, aTAN, SINH, COSH, TANH, aSINH, aCOSH, aTANH
+    fENTER    NAND ~(X & Y) ... useful in HEX mode
+    g-        Calculate 2 roots of quadratic equation xx+px+q=0 (enter p q)
+    fCOS      PV (present value) of interest rate (%) and duration (periods)
   Statistics
     SUM+ SUM- Add/remove number to/from statistics registers
     g0 g.     Mean value and standard deviation
@@ -121,7 +125,6 @@ PLEX supports the following functions:
     gR/S      Start key recorder to input f(x)
     R/S       Stop key recorder, calculate y=f(x)
     fg/ fg*   Solve, slope, integrate, plot
-    g-        Calculate 2 roots of quadratic equation axx+bx+c=0 (enter a b c)
     GSB 8/9   SAVE/LOAD a recorded function to/from one of 6 slots
   Conversions
     fg7 8 9   cm<>in, km<>mi, km<>nmi
@@ -134,8 +137,8 @@ PLEX supports the following functions:
 
     Please note:
     When in HEX mode enter numbers >9 with a dot (ie .1=a, .6=f).
-    To set the OFFTIME enter the desired value (5-300) in seconds to the stack
-    and press Toff (fGSB6).
+    To set the OFFTIME (default is 60s) enter the desired value (5-300) in
+    seconds to the stack and press Toff (fGSB6).
     Be careful when setting the lcd brightness (fGSB4, 0-64) or lcd voltage
     (fGSB5, 0-5-7). The default values are 0 and 5.
     Get/set date and time from/to the real time clock (RTC) with the gGSB menu.
@@ -238,7 +241,8 @@ ____________________
 
 TTOP is a tabletop calculator that enables (simple) calculations with big
 numbers (even in HEX format) with up to 17 digits. If desired two digits are
-used for decimals (ie for cent amounts).
+used for decimals (ie for cent amounts). PLease note that entering decimals
+(after pressing ".") always "shifts the pressed number key in".
 
 TTOP supports the following functions:
   + - * / Basic operation
@@ -249,6 +253,7 @@ TTOP supports the following functions:
   ROT     Rotate 3 stack elements
   BSP     Clear last number
   SQRT    Calculate square root
+  SUM+    NAND ~(X & Y) ... useful in HEX mode
   STO RCL Store TOS or push stored number to stack (store 0 to delete)
   GSB     Menu: Quit TTOP, 0/2 decimals, HEX mode
 
