@@ -122,7 +122,7 @@ PLEX supports the following functions:
     fSUM      Parameters a and b of linear regression (y=a*x+b)
     gBSP      Clears statistics registers (and stack)
   Function analysis
-    gR/S      Start key recorder to input f(x)
+    gR/S      Start key recorder to input f(x) (gR/S R/S to delete)
     R/S       Stop key recorder, calculate y=f(x)
     fg/ fg*   Solve, slope, integrate, plot
     GSB 8/9   SAVE/LOAD a recorded function to/from one of 6 slots
@@ -200,7 +200,7 @@ navigation mode is also active when you refer in a formula to a specific cell.
 
 Keys in navigation mode:
   2 4 6 8  Navigation (Down/Left/Right/Up)
-  ENTER    Edit selected cell, edit new formula cell
+  ENTER 5  Edit selected cell, edit new formula cell
   R/S      Define and edit a new text cell
   BSP      Delete cell
   STO RCL  Save/load spreadsheet to/from one of 6 slots
@@ -297,7 +297,6 @@ TTOP supports the following functions:
   To enter a new line after the last line edit with split option (/) and
   leave editor immediately (ENTER).
   To edit a text TEX uses the text editing routines of RAX (see above).
-
 
 
 ```
