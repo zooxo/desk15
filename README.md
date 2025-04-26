@@ -2,11 +2,6 @@
 
 -----
 
-## *** Coming Soon ***
-## *** If you can't wait - try beta.hex ***
-
------
-
 See a short video of Version 1 of DESK15 at: https://youtu.be/ktrKZzN3wJw
 
 -----
